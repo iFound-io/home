@@ -7,19 +7,33 @@ relative_permalinks: false
 encoding: utf-8
 
 # Setup
-title:               My Website
+title:               iFound.io
 #tagline:             'foo's website
-description:         Foo's blog...
-url: https://lanyon-plus.sbamin.com
-baseurl: ""
-urlimg: https://lanyon-plus.sbamin.com/images/
+description:         iFound.io
+#url: https://lanyon-plus.sbamin.com
+#Orig- url: ""
+#Orig- baseurl: ""
+#Orig- urlimg: https://lanyon-plus.sbamin.com/images/
+
+#url: ""
+#baseurl: ""
+#urlimg: "/images/"
+
 ## If you do not have custom domain, comment top three lines, uncomment three lines below and replace dyndna with your github userid and lanyon-plus with your project name. Also, rename CNAME file to CNAME.sample
 #url: https://dyndna.github.io/lanyon-plus
-#baseurl: "/lanyon-plus"
+###url: https://omnisym.github.io/lanyon-plus/
+###baseurl: "/lanyon-plus"
 #urlimg: https://dyndna.github.io/lanyon-plus/images/
+###urlimg: https://omnisym.github.io/lanyon/images/
+
+url: https://ifound-io.github.io/home/.
+baseurl: /home/.
+urlimg: "/home/images/"
+
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
+  math_engine: 
+company: iFound.io
 
 paginate: 5
 paginate_path: "/blog/page:num"
@@ -82,8 +96,12 @@ links:
     url: /
   - title: <i class="iconside iconm-user"></i> About
     url: /about/
+  - title: <i class="fa fa-faq"></i> FAQs
+    url: /faq/
   - title: <i class="iconside iconm-quill"></i> Blog
     url: /blog/
+  - title: <i class="fa fa-tours"></i> Tours
+    url: /tours/
   - title: <i class="fa fa-tags"></i> Tags
     url: /tags/
   - title: <i class="fa fa-archive"></i> Archive
@@ -99,8 +117,9 @@ links:
   - title: <i class="iconside iconm-feed2"></i> Feed
     url: /feed.xml
 
+
 # Google Custom Search:
-#google_search: xyz123abc
+google_search: xyz123abc
 
 # Twitter stream widget:
 # Replace xyz123abc with your twitter widget id from https://twitter.com/settings/widgets

@@ -1,0 +1,29 @@
+---
+layout: page
+permalink: /tours/
+title: tours
+show_meta: false
+published: true
+description: "FAQs example.com"
+comments: false
+mathjax: false
+noindex: false
+sitemap:
+    priority: 0.5
+    changefreq: 'monthly'
+    lastmod: 2016-02-13
+tags:
+  - "foo boo"
+  - "driving directions"
+  - address
+
+tour:
+  name: Flying with eagles
+  description: text here
+  price: 120€
+---
+{% capture url %}n={{ page.tour.name | uri_escape }}&p={{ page.tour.price | uri_escape }}{% endcapture %}
+
+<h2>{{ page.tour.name }} ({{ page.tour.price }}) - <a href="/tour-form?{{ url }}">Book me for this tour!</a></h2>
+
+<p>{{ page.tour.description }}</p>
